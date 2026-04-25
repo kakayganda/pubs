@@ -1,0 +1,165 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.active {
+  color: #16a34a;
+}
+
+.editorjsdiv h2{
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.editorjsdiv  h3, h4, h5{
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.editorjsdiv li{
+  margin-bottom: 10px;
+  list-style-type: disc;
+  padding-left: 10px;
+  margin-left: 25px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scaleIn {
+  from { transform: scale(0.8); }
+  to { transform: scale(1); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.animate-scaleIn {
+  animation: scaleIn 0.5s ease-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-slideIn {
+  animation: slideIn 0.2s ease-out forwards;
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex items-center px-4 py-2 text-sm rounded-lg transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2;
+  }
+  .btn-outline-purple {
+    @apply text-purple-600 hover:text-purple-800 hover:bg-purple-50 focus:ring-purple-200;
+  }
+  .btn-outline-yellow {
+    @apply text-yellow-600 hover:text-yellow-700 bg-yellow-50 hover:bg-yellow-100 focus:ring-yellow-200;
+  }
+  .btn-outline-red {
+    @apply text-red-600 hover:text-red-700 bg-red-50 hover:bg-red-100 focus:ring-red-200;
+  }
+  .btn-ghost {
+    @apply text-gray-600 hover:text-gray-800 bg-white border border-gray-300 hover:bg-gray-50 focus:ring-gray-200;
+  }
+  .btn-yellow {
+    @apply text-white bg-yellow-600 hover:bg-yellow-700 focus:ring-yellow-300;
+  }
+  .btn-red {
+    @apply text-white bg-red-600 hover:bg-red-700 focus:ring-red-300;
+  }
+  .animate-fade-in {
+    animation: fadeIn 0.3s ease-out;
+  }
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+}
+
+@keyframes dropdown {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-dropdown {
+  animation: dropdown 0.2s ease-out forwards;
+}
+
+/* For custom scrollbar (optional) */
+.scrollbar-thin::-webkit-scrollbar {
+  width: 5px;
+}
+
+.scrollbar-thumb-gray-300::-webkit-scrollbar-thumb {
+  background-color: #d1d5db;
+  border-radius: 5px;
+}
+
+.scrollbar-track-gray-100::-webkit-scrollbar-track {
+  background-color: #f3f4f6;
+}
+
+.react-calendar-custom .react-calendar {
+  width: 100% !important;
+  border: 1px solid #e5e7eb !important;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.react-calendar-custom .react-calendar__tile--active {
+  background: #3b82f6 !important;
+  color: white !important;
+}
+
+.react-calendar-custom .react-calendar__navigation button:disabled {
+  background-color: white !important;
+}
+
+.react-calendar-custom .react-calendar__tile--now {
+  background: #bfdbfe !important;
+}
+
+.border-purple-200 {
+  border-color: #e9d5ff;
+}
+.text-purple-700 {
+  color: #6b21a8;
+}
+.bg-purple-100 {
+  background-color: #f3e8ff;
+}
+.text-purple-800 {
+  color: #581c87;
+}
+
+/* Add this to your CSS */
+.border-purple-200 {
+  border-color: #e9d5ff;
+}
